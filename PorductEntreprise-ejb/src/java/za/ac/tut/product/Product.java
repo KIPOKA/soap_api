@@ -24,14 +24,16 @@ public class Product implements Serializable {
     private int id;
     private String name;
     private double price;
+    private int qty;
 
     public Product() {
     }
 
-    public Product(int id, String name, double price) {
+    public Product(int id, String name, double price, int qty) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.qty = qty;
     }
 
     public int getId() {
@@ -56,6 +58,14 @@ public class Product implements Serializable {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public int getQty() {
+        return qty;
+    }
+
+    public void setQty(int qty) {
+        this.qty = qty;
     }
     
     
