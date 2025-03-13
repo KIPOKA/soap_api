@@ -31,7 +31,7 @@ EntityManager manager;
 
    @Override
 public void deleteProduct(int id) {
-    Product product = manager.find(Product.class, id);
+    Product product =getProduct( id);
     if (product != null) {
         manager.remove(product);
         System.out.println("Product with ID " + id + " has been deleted.");
@@ -44,8 +44,5 @@ public void deleteProduct(int id) {
     public Product updateProduct(Product updatedProduct) {
         return manager.merge(updatedProduct);
     }
-
- 
-    
-    
+  
 }
