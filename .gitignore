@@ -1,3 +1,7 @@
 /PorductEntreprise-ejb/build/
 /PorductEntreprise-war/build/
 /PorductEntreprise-ejb/dist/
+/AppClient/nbproject/private/
+/AppClient/build/
+/ClientApp/nbproject/private/
+/ClientApp/build/

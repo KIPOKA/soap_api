@@ -4,12 +4,14 @@
  */
 package za.tut.ac.session;
 
+import javax.ejb.Remote;
 import za.ac.tut.product.Product;
 
 /**
  *
  * @author ladyk
  */
+@Remote
 public interface ProductInterface {
     public void addProduct(Product product);
     public Product getProduct(int id);

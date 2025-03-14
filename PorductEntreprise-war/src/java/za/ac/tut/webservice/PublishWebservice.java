@@ -19,8 +19,8 @@ public class PublishWebservice {
      */
     public static void main(String[] args) {
         // TODO code application logic here 
+       
         Endpoint.publish("http://localhost:9897/productwebservice/product",new ProductWebService());
-         
-    }
+         }
     
 }

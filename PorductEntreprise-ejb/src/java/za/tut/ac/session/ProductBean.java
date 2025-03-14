@@ -17,7 +17,8 @@ import za.ac.tut.product.Product;
 public class ProductBean implements ProductInterface {
 
    @PersistenceContext(unitName="productUnit")
-EntityManager manager;
+    EntityManager manager;
+   
     @Override
     public void addProduct(Product product) {
         manager.persist(product);
